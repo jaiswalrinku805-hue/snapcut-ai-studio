@@ -65,7 +65,8 @@ export default function UploadWorkspace() {
     }
     setProgress(100);
     // Use a checkerboard pattern as the "result" (transparent PNG placeholder)
-    setResultUrl(preview);
+     setResultUrl('data:image/png;base64, 
+     iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
     setStatus('done');
     if (user) updateUsage(user.monthlyUsed + 1);
     toast({ title: 'Background removed!', description: 'Your image is ready to download.' });
